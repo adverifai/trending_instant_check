@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://check-worthy.herokuapp.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="description" content="Check-Worthy by AdVerif.ai: The Most Check-Worthy Stories">
+  <meta name="keywords" content="Artificial Intelligence,Fact Check">
+  <meta name="author" content="Or Levi">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="300">
+<title>Trending Instant-Check: Integrated Social Media Monitoring and Cross-Checking Platform</title>
+<link rel="stylesheet" type="text/css" href="./Check-Worthy by AdVerif.ai_ The Most Check-Worthy Stories_files/style.css">
+<script type="text/javascript" src="./Check-Worthy by AdVerif.ai_ The Most Check-Worthy Stories_files/jquery-3.2.1.min.js.download"></script>
+<script type="text/javascript" src="./Check-Worthy by AdVerif.ai_ The Most Check-Worthy Stories_files/moment.min.js.download"></script>
+<script id="dataslayerLaunchMonitors">
+console.log('** dataslayer: injecting Launch monitors **');
+window._satellite = window._satellite || {};
+window._satellite._monitors = window._satellite._monitors || [];
+window._satellite._monitors.push({
+  ruleTriggered: function(e) {
+    window.parent.postMessage(
+      {
+        type: 'dataslayer_launchruletriggered',
+        url: window == window.parent ? window.location.href : 'iframe',
+        data: JSON.parse(JSON.stringify(e.rule)),
+      },
+      '*'
+    );
+  },
+  ruleCompleted: function(e) {
+    // console.log('** dataslayer: Launch rule completed **', e.rule);
+    var rule = JSON.parse(JSON.stringify(e.rule));
+    var sendRule = function() {
+        if (window.dataslayer) {
+            window.parent.postMessage(
+                {
+                    type: 'dataslayer_launchrulecompleted',
+                    url: window == window.parent ? window.location.href : 'iframe',
+                    data: rule,
+                },
+                '*'
+            );       
+            // console.log('** dataslayer: posted rule '+rule+'**'); 
+        } else {
+            if (document.readyState === 'complete') {
+                // console.log('** dataslayer: giving up on launch **');
+                window._dataslayerQueue = window._dataslayerQueue || [];
+                window._dataslayerQueue.push({
+                  type: 'dataslayer_launchrulecompleted',
+                  url: window == window.parent ? window.location.href : 'iframe',
+                  data: rule,
+                });
+                return;
+            } else {
+                // console.log('** dataslayer: waiting 250ms to repost rule **');
+                window.setTimeout(sendRule, 250);
+            }
+        }
+    }
+    sendRule();
+    if (
+      window._satellite &&
+      window._satellite._container &&
+      window._satellite._container.dataElements
+    ) {
+      var elementNames = Object.keys(
+        window._satellite._container.dataElements
+      ).sort(function(a, b) {
+        var nameA = a.toUpperCase();
+        var nameB = b.toUpperCase();
+
+        if (nameA < nameB) {
+          return -1;
+        } else if (nameA > nameB) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+
+      let launchElements = {};
+
+      for (var i = 0; i < elementNames.length; i++) {
+        var newElement = JSON.parse(
+          JSON.stringify(
+            window._satellite._container.dataElements[elementNames[i]]
+          )
+        );
+  
+        let cleanValue = window._satellite.getVar(elementNames[i]);
+        if (typeof cleanValue === 'function') {
+          cleanValue = '(function)';
+        } else if (
+          typeof cleanValue === 'object' &&
+          typeof cleanValue.then === 'function'
+        ) {
+          cleanValue = '(Promise)';
+        }
+        launchElements[elementNames[i]] = cleanValue;
+        // launchElements.push({
+        //   key: elementNames[i],
+        //   value: cleanValue,
+        //   element: newElement,
+        // });
+      }
+      try {
+        window.parent.postMessage(
+          {
+            type: 'dataslayer_launchdataelements',
+            data: 'found',
+            url: window == window.parent ? window.location.href : 'iframe',
+            elements: launchElements
+          },
+          '*'
+        );
+      } catch (e) {
+        console.warn(e);
+      }
+  
+    }
+  },
+  ruleConditionFailed: function(e) {
+    window.parent.postMessage(
+      {
+        type: 'dataslayer_launchrulefailed',
+        url: window == window.parent ? window.location.href : 'iframe',
+        data: JSON.parse(JSON.stringify(e.rule)),
+      },
+      '*'
+    );
+  },
+});
+</script><style data-styled="" data-styled-version="4.3.2"></style></head>
+<body style="">
+
+<center style="margin-bottom:10px;">
+<h1 style="font-size:1.4em">Trending Instant-Check: Integrated Social Media Monitoring and Cross-Checking Platform</h1>
+<div class="menu">
+<div class="links" style="display:inline-block;margin-right:10px;">
+<a href="">All</a> |
+<a href="">Politics</a> |
+<a href="">Crime</a> |
+<a href="">Health</a> |
+<a href="">Science</a>
+</div>
+<form action="https://check-worthy.herokuapp.com/search" method="post" style="display:inline-block;">
+    <input type="text" name="query" value="search..">
+    <input type="submit" value="Go">
+</form>
+</div>
+</center>
+
+
+<div id="news">
+<div class="story">
+<div class="tooltip high">&#10004;<span class="tooltiptext">This website maintains basic standards of reporting<ul style="list-style-type:none"><li>&#10004; Accountability</li><li>&#10004; Credibility</li><li>&#10004; Transparency</li></ul></span></div>
+<div class="new" id="3dd82a60d4d404e5c5106dc246141bd7">NEW</div>
+<span class="title"><h2><a href="https://www.nbcnews.com/politics/trump-impeachment-inquiry/live-blog/live-updates-house-votes-impeachment-president-trump-n1103576" target="_blank">NBC News | The US House is expected to vote today on articles of impeachment.</a></h2></span>
+<img src="./Check-Worthy by AdVerif.ai_ The Most Check-Worthy Stories_files/safe_image.php">
+<p class="source">Via: <a href="https://www.nbcnews.com/politics/trump-impeachment-inquiry/live-blog/live-updates-house-votes-impeachment-president-trump-n1103576">https://www.nbcnews.com</a></p>
+<p>LIVE BLOG: The US House is expected to vote today on articles of impeachment against President Trump.
+
+Before the votes, there will be 6 hours of debate....</p>
+</div> 
+
+<div class="story">
+<div class="tooltip low">!<span class="tooltiptext"><u><a href="https://english.factcrescendo.com/2019/07/11/delhi-governments-proposal-for-free-metro-for-women-cancelled/" target="_blank" style="color:white;">This story was debunked. Read more</a></u></span></div>
+<div class="new" id="ac994eadd4dc9ab03d56ae771fdf13d6">NEW</div>
+<span class="title"><h2><a href="https://www.republicworld.com/india-news/general-news/big-setback-to-arvind-kejriwal-centre-says-no-to-aap-governments-proposal-to-make-delhi-metro-rides-free-for-women" target="_blank">Centre Says No To AAP Government's Proposal To Make Delhi Metro Rides Free For Women</a></h2></span>
+<img src="https://img.republicworld.com/republic-prod/stories/images/xxhdpi/15616260325d1485b01e93b.jpeg?tr=w-812,h-464">
+<p class="source">Via: <a href="https://www.republicworld.com/india-news/general-news/big-setback-to-arvind-kejriwal-centre-says-no-to-aap-governments-proposal-to-make-delhi-metro-rides-free-for-women">https://www.republicworld.com</a></p>
+<p>The Centre on Thursday clarified its stance on free rides for women in Delhi Metro, a freebie that was announced by Delhi Chief Minister </p>
+</div> 
+
+<div class="story">
+<div class="tooltip mixed">!<span class="tooltiptext">This is a satire website.</span></div>
+<div class="new" id="33baf9cf78c45e866ea9cdb74127b62f">NEW</div>
+<span class="title"><h2><a href="http://www.fakingnews.com/india/mumbai-police-faces-shortage-bullet-proof-jackets-will-order-rent-john-akshay-30636" target="_blank">Mumbai police faces shortage of bullet-proof jackets, will order from John and Akshay</a></h2></span>
+<img src="http://www.fakingnews.com/wp-content/uploads/2019/07/BeFunky-collage-39-806x403.jpg">
+<p class="source">Via: <a href="http://www.fakingnews.com/india/mumbai-police-faces-shortage-bullet-proof-jackets-will-order-rent-john-akshay-30636">http://www.fakingnews.com</a></p>
+<p>Akshay and John, in fact, have lots of bulletproof jackets lying with them and their collection is much more than the supplier of the jackets to Mumbai Police.</p>
+</div> 
+
+<div class="story">
+<div class="tooltip low">!<span class="tooltiptext">This website does not maintain basic standards of reporting<ul style="list-style-type:none"><li>&#10004; Accountability</li><li>&#10005; Credibility - repeatedly publish false information</li><li>&#10004; Transparency</li></ul></span></div>
+<div class="new" id="d82a0916fefcb3ca8ffe202d58d7582a">NEW</div>
+<span class="title"><h2><a href="http://www.bbcnewshub.com/top-10-list-of-most-corrupt-political-party-in-the-world-2018/" target="_blank">Top 10 List of Most Corrupt Political Party in the World 2018</a></h2></span>
+<img src="http://www.bbcnewshub.com/wp-content/uploads/2018/07/Top-10-List-of-Most-Corrupt-Political-Party-in-the-World-2018-Indian-National-Congress-India.jpg">
+<p class="source">Via: <a href="http://www.bbcnewshub.com/top-10-list-of-most-corrupt-political-party-in-the-world-2018/">http://www.bbcnewshub.com</a></p>
+<p>Here is the list of the top 10 most corrupt political parties of 2019</p>
+</div> 
+
+<div class="story">
+<div class="tooltip">&#128270;<span class="tooltiptext"><a href="https://www.factcrescendo.com/factcheck/" target="_blank" style="color:white">No available info.<br> <u>Submit for fact-checking</u></a></span></div>
+<div class="new" id="9f71de7fc3141359b6f01ddfc3d293b1">NEW</div>
+<span class="title"><h2><a href="https://defence.pk/pdf/threads/genocidealert-indian-genocide-in-kashmir.631521/" target="_blank">Genocide Watch is issuing a Genocide Alert for India Administered Kashmir</a></h2></span>
+<img src="https://defence.pk/wp-content/uploads/2019/08/ECQwd76XUAAoDwI.png">
+<p class="source">Via: <a href="https://defence.pk/pdf/threads/genocidealert-indian-genocide-in-kashmir.631521/">https://defence.pk</a></p>
+<p>On August 5, the Indian President revoked the Special Autonomous Status of India Administered Jammu and Kashmir under Articles 370</p>
+</div> 
+
+<div class="story">
+<div class="tooltip high">&#10004;<span class="tooltiptext">This website maintains basic standards of reporting<ul style="list-style-type:none"><li>&#10004; Accountability</li><li>&#10004; Credibility</li><li>&#10004; Transparency</li></ul></span></div>
+<div class="new" id="6f70b3196b0d003b6c535869c4431c17">NEW</div>
+<span class="title"><h2><a href="https://americanmilitarynews.com/2019/12/heres-one-of-the-first-airmen-to-wear-a-turban-in-the-us-air-force/" target="_blank">Here's one of the first airmen to wear a turban in the US Air Force</a></h2></span>
+<img src="./Check-Worthy by AdVerif.ai_ The Most Check-Worthy Stories_files/191205-F-CP320-2023-1024x683.jpg">
+<p class="source">Via: <a href="https://americanmilitarynews.com/2019/12/heres-one-of-the-first-airmen-to-wear-a-turban-in-the-us-air-force/">https://americanmilitarynews.com</a></p>
+<p>Jaspreet Singh cut his hair when he joined the U.S. Air Force. He knew the rules and complied with the military's regulations. For Singh, though, that did not mean just a close haircut. It also meant not being able to wear his turban - a central part of his&nbsp;Sikhism&nbsp;religion. Now, the Joint Base McGuire-Dix-Lakehurst airman first class, who works on the base's fire service, is the third member of the Air Force granted a religious accommodation to wear a turban with his uniform. (The prior two were granted earlier this year.) "It's more about identity for me," Singh&nbsp;said in a story posted on the base's website. "When I got that first haircut [in basic military training] I felt like I lost everything. Losing that made me realize that I don't want to lose who I am." Singh was born in India and moved to the United States as a child. His family name Singh comes from the Indian word for lion, and many baptized male Sikhs who take the name - after Guru Gobind Singh, the tenth and final human</p>
+</div> </div>
+
+<div id="aboutfooter">
+<h3>About</h3>
+Trending Instant-Check will provide social media users with a one-stop-shop to consume information while being able to instantly cross-check any suspicious content they come across. <br>
+The platform will not only collect newsworthy information from the major social media platforms across a range of topics (politics, health, science), but also employ AI and Natural Language Processing to provide users with additional context and related fact-checks alongside the consumed information:
+<ul>
+<li>Each story is color-coded based on basic standards of reporting, including Accountability, Credibility and Transparency. <span style="color:#5cd65c">Green</span> represents generally reliable information while <span style="color:#ffff1a">yellow </span> and <span style="color:#ff471a">red </span> require user attention.</li>
+<li>If there is a fact-check story already done for a piece of content, the fact-check will automatically be presented alongside the content to give users further context.</li>
+<li>If users come across suspicious content that has not been checked yet, they could instantly submit it to be checked, directly from this platform to the fact-checking organization.</li>
+</div>
+
+
+</body></html>
