@@ -16,7 +16,7 @@ console.log('** dataslayer: injecting Launch monitors **');
 window._satellite = window._satellite || {};
 window._satellite._monitors = window._satellite._monitors || [];
 window._satellite._monitors.push({
-  ruleTriggered: function(e) {
+  r>eTriggered: function(e) {
     window.parent.postMessage(
       {
         type: 'dataslayer_launchruletriggered',
@@ -220,7 +220,8 @@ The platform will not only collect newsworthy information from the major social 
 <ul>
 <li>If there is a fact-check story already done for a piece of content, the <u>fact-check will automatically be presented alongside the content, highlighted in red,</u> to give users further context.</li>
 <li>If users come across suspicious content that has not been checked yet, they could instantly <u>click the search icon and submit the content to be checked</u>, directly from this platform to the fact-checking organization.</li>
-The platform introduces a new business model for fact-checking content - <u>personalized native advertising</u>. This will not only enrich the recommendations with journalistic content from trustworthy publishers if there are not enough fact-check stories related to the user’s interests, but also contribute to the sustainability of this project<br>
+  </ul>
+The platform introduces a new business model for fact-checking content - <u>personalized native advertising</u>. This will not only enrich the recommendations with journalistic content from trustworthy publishers, but also contribute to the sustainability of this project.<br>
   </div>
 
 </body></html>
